@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  /* main page container */
+  .section-container{
+    @apply max-w-7xl mx-auto px-6 lg:px-12;
+  }
+
+  /* section spacing */
+  .section-spacing{
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  /* section heading */
+  .section-heading{
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-brand-dark;
+    
+  }
+
+  /* section paragraph */
+  .section-text{
+    @apply mt-4 max-w-2xl text-gray-600 leading-relaxed;
+  }
+
+  /* primary button */
+  .btn-primary{
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-orange text-white font-semibold transition duration-300 hover:bg-orange-700 hover:-translate-y-0.5;
+  }
+
+  /* whatsapp button */
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center
+           gap-2
+           px-6 py-3
+           rounded-xl
+           bg-brand-green
+           text-brand-dark
+           font-semibold
+           transition
+           duration-300
+           hover:bg-green-400
+           hover:-translate-y-0.5;
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center
+           gap-2
+           px-6 py-3
+           rounded-xl
+           border border-gray-300
+           text-brand-dark
+           font-semibold
+           transition
+           duration-300
+           hover:bg-gray-100;
+  }
+/* Product card */
+  .product-card {
+    @apply overflow-hidden
+           rounded-card
+           bg-white
+           border border-gray-200
+           shadow-card
+           transition
+           duration-300
+           hover:-translate-y-1
+           hover:shadow-xl;
+  }
+ /* Category card */
+  .category-card {
+    @apply rounded-card
+           bg-white
+           border border-gray-200
+           p-6
+           transition
+           duration-300
+           hover:-translate-y-1
+           hover:shadow-card;
+  }
+
+   /* Feature card */
+  .feature-card {
+    @apply rounded-card
+           bg-white
+           border border-gray-200
+           p-6
+           shadow-sm
+           transition
+           duration-300
+           hover:shadow-card;
+  }
+/* Form input */
+  .form-input {
+    @apply w-full
+           rounded-xl
+           border border-gray-300
+           px-4 py-3
+           text-gray-900
+           outline-none
+           transition
+           focus:border-brand-orange
+           focus:ring-2
+           focus:ring-orange-100;
+  }
+
+ /* Product price */
+  .product-price {
+    @apply text-xl
+           font-bold
+           text-brand-orange;
+  }
+
+
+  /* Small orange label */
+  .eyebrow {
+    @apply inline-block
+           text-sm
+           font-bold
+           uppercase
+           tracking-wider
+           text-brand-orange;
+  }
+  
+}
